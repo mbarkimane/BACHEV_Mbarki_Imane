@@ -15,3 +15,14 @@ data = {
     'Longueur': [12, 12, 12, 10, 11, 10, 10],
     'Pourcentage GC': [50, 66.67, 58.33, 40, 45.45, 60, 50]
 }
+
+# 1) Créer et afficher le tableau avec pandas
+df = pd.DataFrame(data)
+print("1) TABLEAU INITIAL")
+print(df)
+print("\n")
+
+# 2) Sélectionner et afficher uniquement la colonne "Longueur"
+print("2) COLONNE 'LONGUEUR'")
+print(df['Longueur'])
+print("\n")
