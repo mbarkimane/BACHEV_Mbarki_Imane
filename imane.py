@@ -39,3 +39,22 @@ print("4) POURCENTAGE MOYEN DE GC")
 print(f"{moyenne_gc}%")
 print("\n")
 
+# 5) Ajouter une colonne "Catégorie GC"
+def categoriser_gc(pourcentage):
+    if pourcentage > 55:
+        return "Riche"
+    elif 45 <= pourcentage <= 55:
+        return "Moyen"
+    else:
+        return "Faible"
+
+df['Catégorie GC'] = df['Pourcentage GC'].apply(categoriser_gc)
+print("5) TABLEAU AVEC CATÉGORIE GC")
+print(df)
+print("\n")
+
+# 6) Ajouter une colonne avec le nombre de 'G' dans chaque séquence
+df['Nombre de G'] = df['Séquence'].apply(lambda x: x.count('G'))
+print("6) TABLEAU AVEC NOMBRE DE G")
+print(df)
+print("\n")
