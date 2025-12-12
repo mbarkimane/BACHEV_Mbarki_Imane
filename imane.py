@@ -1,3 +1,11 @@
+
+# 7) Calculer l'écart-type du %GC et de la longueur des séquences
+ecart_type_gc = round(df['Pourcentage GC'].std(), 3)
+ecart_type_longueur = round(df['Longueur'].std(), 3)
+print("7) ÉCART-TYPE")
+print(f"Écart-type du %GC: {ecart_type_gc}")
+print(f"Écart-type de la Longueur: {ecart_type_longueur}")
+print("\n")
 #Mbarkiimane_M1_BACHEV_11/12/2025
 #Boudaoud Meryem
 #Chekroun Hadjer
@@ -58,3 +66,12 @@ df['Nombre de G'] = df['Séquence'].apply(lambda x: x.count('G'))
 print("6) TABLEAU AVEC NOMBRE DE G")
 print(df)
 print("\n")
+
+# 7) Calculer l'écart-type du %GC et de la longueur des séquences
+ecart_type_gc = round(df['Pourcentage GC'].std(), 3)
+ecart_type_longueur = round(df['Longueur'].std(), 3)
+print("7) ÉCART-TYPE")
+print(f"Écart-type du %GC: {ecart_type_gc}")
+print(f"Écart-type de la Longueur: {ecart_type_longueur}")
+print("\n")
+
