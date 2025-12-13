@@ -27,3 +27,5 @@ print("2) COLONNE 'LONGUEUR'")
 print(df['Longueur'])
 print("\n")
 
+
+
