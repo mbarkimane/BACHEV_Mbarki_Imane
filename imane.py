@@ -67,3 +67,8 @@ print(f"Écart-type du %GC: {ecart_type_gc}")
 print(f"Écart-type de la Longueur: {ecart_type_longueur}")
 print("\n")
 
+# 8) Sauvegarder le tableau final dans un fichier CSV
+print("8) CONTENU DU FICHIER CSV")
+print(df.to_csv(index=False))
+print("TABLEAU FINAL COMPLET")
+print(df) 
